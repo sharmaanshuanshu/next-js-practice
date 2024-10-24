@@ -1,0 +1,21 @@
+.main-container{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.main-container input{
+    display: block;
+    padding: 10px;
+    background-color: antiquewhite;  
+}
+
+.main-container button{
+    width: 193px;
+    padding: 10px;
+    background-color: aqua;  
+}

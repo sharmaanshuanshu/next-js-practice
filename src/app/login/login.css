@@ -1,0 +1,13 @@
+.login-main{
+    display: flex;
+    list-style-type: none;
+}
+
+.login-main li{
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.login-main li a{
+    text-decoration: none;
+}
