@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function uploadImage() {
+export default function UploadImage() {
 
     const [file, setFile] = useState();
 

@@ -5,7 +5,9 @@ export default function Lecture({params}){
             {
                 params.lecture.map(function(items,index){
                     return(
-                        <h1>{items}</h1>
+                        <div key = {index}>
+                            <h1>{items}</h1>
+                        </div>
                     )
                 })
             }

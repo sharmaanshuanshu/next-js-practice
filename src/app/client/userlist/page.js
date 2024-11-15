@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import '../userlist/userlist.css'
 import Link from "next/link";
 
-export default function userList(){
+export default function UserList(){
     const [list, setList] = useState([]);
 
     useEffect(()=>{

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import {useRouter} from "next/navigation";
 import next from "next";
-export default function about(){
+export default function About(){
 
     const router = useRouter();
     return(

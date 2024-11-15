@@ -2,7 +2,7 @@
 import '../userAddForm/userAddForm.css';
 import { useState } from "react";
 
-export default function userAddForm(){
+export default function UserAddForm(){
 
     const [fisrtName, setFirstName] = useState('');
     const [lastName, setlastName] = useState('');

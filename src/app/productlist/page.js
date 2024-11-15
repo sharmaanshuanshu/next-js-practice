@@ -3,7 +3,7 @@
 import '../productlist/productlist.css'
 import { useEffect, useState } from "react";
 
-export default function productList(){
+export default function ProductList(){
 
     const [data, setData] = useState();
 

@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import popupwindow from '../popwindow/page'
 
-export default function model(){
+export default function Model(){
    
    const [showModel, setShowModel] = useState(false);
     return(

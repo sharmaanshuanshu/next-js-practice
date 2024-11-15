@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from "react";
 
-export default function update(context){
+export default function Update(context){
     var userId = context.params.id;
 
     const [firstName, setFirstName] = useState('');
@@ -12,7 +12,7 @@ export default function update(context){
         getUserDetail();     
     },[]);
 
-    async function getUserDetail(){
+    async function GetUserDetail(){
         var response = await fetch(`http://localhost:3000/api/detail/${userId}`);
         var responseData = await response.json();
         responseData.data.map((item)=>{  

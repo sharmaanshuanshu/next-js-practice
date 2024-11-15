@@ -1,7 +1,7 @@
     'use client';
     import { useState } from 'react';
     import '../addproduct/addproduct.css'
-    export default function addProduct(){
+    export default function AddProduct(){
 
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');

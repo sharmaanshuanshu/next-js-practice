@@ -3,10 +3,10 @@ import DeleteUser from "@/util/DeleteUser";
 import Link from "next/link";
 import { useEffect, useState } from "react"
 
-export default function userListId(context){
+export default function UserListId(context){
 
 
-    const { id } = context.params;
+    const id = context.params.id;
     
     const [singleUser, setSingleUser] = useState([]);
 
