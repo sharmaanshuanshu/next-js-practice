@@ -10,7 +10,6 @@
     const [color, setColor] = useState('');
 
    async function submitForm(){
-    console.log('submitForm..........');
         var dataObj = {
             name: name,
             price: price,

@@ -1,7 +1,7 @@
 
-'use client'
-import { useEffect } from "react"
-import { useState } from "react";
+'use client';
+import '../productlist/productlist.css'
+import { useEffect, useState } from "react";
 
 export default function productList(){
 
@@ -18,7 +18,7 @@ export default function productList(){
 
     return(
         <>
-            {
+            {/* {
                data ? data.result.map((item, index)=>{
                 return(
                     <div key = {index}>
@@ -30,7 +30,37 @@ export default function productList(){
                     </div>
                 )
                }) : []
+            } */}
+
+            {
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Color</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            data ? data.result.map((item, index)=>{
+                                return(
+                                    <tr key = {index} className = 'td-color'>
+                                        <td>{item.name}</td>
+                                        <td>{item.company}</td>
+                                        <td>{item.price}</td>
+                                        <td>{item.category}</td>
+                                        <td>{item.color}</td>
+                                    </tr>
+                                )
+                               }) : []
+                        }
+                    </tbody>
+                </table>
             }
+
         </>
     )
 }

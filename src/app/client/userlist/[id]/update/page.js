@@ -23,13 +23,17 @@ export default function update(context){
     }
 
     async function updateUser() {
-       var result = await fetch(`http://localhost:3000/api/detail/${userId}`,{
+       var data = await fetch(`http://localhost:3000/api/detail/${userId}`,{
         method: "PUT",
         body: JSON.stringify({firstName,lastName,profile})
        });
 
-        result = await result.json();
-        console.log(result);
+       data = await data.json();
+       if(data && data.result){
+        alert('Prodcut Updated Sucessfully');
+       }else{
+        alert('Error');
+       }
     }
 
     return(

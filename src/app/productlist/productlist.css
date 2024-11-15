@@ -1,0 +1,14 @@
+table{
+    background-color: antiquewhite;
+    border-collapse: collapse;
+}
+
+table th{
+    border: 1px solid black;
+}
+
+table td{
+    border: 1px solid black;
+    background-color: azure;
+
+}
