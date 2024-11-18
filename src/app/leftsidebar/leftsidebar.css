@@ -6,44 +6,82 @@
     position: fixed;
     top: 0;
     left: 0;    
-    padding-top: 20px;
   }
 
-  .sidebar ul{
+  .sidebar.closed{
+    width: 60px;
+  }
+
+  .logo{
+    text-align: center;
+  }
+
+  .logo h2{
+    font-family: sans-serif;
+    font-weight: 700px;
+    font-size: 18px;
+  }
+
+  .sidebar-header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(33, 33, 65);
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .toogle-btn{
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .toogle-btn .arrow{
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .toogle-btn .left{
+    border-width: 8px 10px 8px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .toogle-btn .right{
+    border-width: 8px 0px 8px 10px;
+    border-color: transparent transparent transparent white;
+  }
+
+  .nav-menu ul{
     list-style-type: none;
     padding: 0;
   }
 
-  .sidebar ul li{
-    margin: 20px 20px;
+  .nav-menu ul li{
+    padding: 15px 20px;
   }
 
-  .sidebar ul li a{
+  .nav-menu ul li a{
     text-decoration: none;
     color: white;
     font-size: 18px;
   }
 
-  .sidebar ul li a:hover{
+  .nav-menu ul li a:hover{
     background-color: white;
     color: black;
+    padding: 5px;
   }
 
-  
-  .icon-list{
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .listIcon-1{
-    font-size: 20px;
-    color: white;  
-    margin-left: 5px;    
+  .svg-inline--fa{
+    margin-right: 10px;
   }
 
-  .listIcon-2{
-    font-size: 20px;
-    color: white;
-    margin-right: 5px;    
+  .arrow{
+    margin-left: 12px;
   }
+  
   

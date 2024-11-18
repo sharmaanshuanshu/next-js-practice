@@ -26,8 +26,8 @@ export default function Home() {
      {/* <Link href = {'/addproduct'}>Add product</Link><br></br><br></br>
      <Link href = {'/productlist'}>Prodcut List</Link><br></br><br></br> */}
      {/* <FontAwesomeIcon className="listIcon" icon={faList} onClick={showHideSideBar}></FontAwesomeIcon> */}
-     <Navbar></Navbar>
-     {/* <LeftSideBar></LeftSideBar>    */}
+     {/* <Navbar></Navbar> */}
+     <LeftSideBar></LeftSideBar>   
     </>
   );
 }
